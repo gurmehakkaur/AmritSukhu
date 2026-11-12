@@ -1,0 +1,9 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/rsvp/route": "/api/rsvp",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/rsvp/[event]/page": "/rsvp/[event]",
+  "/rsvp/page": "/rsvp"
+}

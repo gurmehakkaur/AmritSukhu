@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 64, "column": 0}, "map": {"version":3,"sources":["file:///D:/Amrit-sukhu/src/app/api/rsvp/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\r\n\r\nexport async function POST(request: Request) {\r\n  const payload = await request.json();\r\n\r\n  if (!payload?.name || !payload?.phone || !payload?.events) {\r\n    return NextResponse.json({ error: \"Missing required RSVP details\" }, { status: 400 });\r\n  }\r\n\r\n  // The Google Forms adapter belongs here once the private form endpoint is supplied.\r\n  // Keeping this server-side prevents form configuration from reaching the browser.\r\n  return NextResponse.json({ received: true }, { status: 200 });\r\n}"],"names":["POST","request","payload","json","name","phone","events","error","status","received"],"mappings":";;;;AAAA;;AAEO,eAAeA,KAAKC,OAAgB;IACzC,MAAMC,UAAU,MAAMD,QAAQE,IAAI;IAElC,IAAI,CAACD,SAASE,QAAQ,CAACF,SAASG,SAAS,CAACH,SAASI,QAAQ;QACzD,OAAO,gJAAY,CAACH,IAAI,CAAC;YAAEI,OAAO;QAAgC,GAAG;YAAEC,QAAQ;QAAI;IACrF;IAEA,oFAAoF;IACpF,kFAAkF;IAClF,OAAO,gJAAY,CAACL,IAAI,CAAC;QAAEM,UAAU;IAAK,GAAG;QAAED,QAAQ;IAAI;AAC7D"}}]
+}
